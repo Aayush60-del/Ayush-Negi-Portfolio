@@ -1,0 +1,91 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 6 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Length 1536 >>
+stream
+BT
+50 740 Td
+/F1 20 Tf
+(AYUSH NEGI - MERN STACK DEVELOPER) Tj
+0 -24 Td
+/F2 10 Tf
+(Email: negiius724@gmail.com | Location: Mohali, Punjab | GitHub: github.com/Aayush60-del) Tj
+0 -18 Td
+/F2 10 Tf
+(MERN Stack Developer & Software Engineer building production-grade, AI-integrated applications.) Tj
+0 -28 Td
+/F1 13 Tf
+(PROFESSIONAL EXPERIENCE) Tj
+0 -18 Td
+/F1 10 Tf
+(Software Developer - Algoson Software Pvt. Ltd. \(Present\)) Tj
+0 -14 Td
+/F2 10 Tf
+(Backend integration, dynamic web features, and Python data pipelines.) Tj
+0 -24 Td
+/F1 13 Tf
+(TECHNICAL SKILLS) Tj
+0 -18 Td
+/F2 10 Tf
+(Languages & Frameworks: React, Next.js, Node.js, Express, Redux Toolkit, Python, Java, C++) Tj
+0 -14 Td
+/F2 10 Tf
+(Databases & Cloud: MongoDB, SQL, AWS S3, Docker, Kubernetes, Git/GitHub) Tj
+0 -24 Td
+/F1 13 Tf
+(EDUCATION) Tj
+0 -18 Td
+/F2 10 Tf
+(Bachelor of Computer Science - Chandigarh University \(2025 - 2028, CGPA 8.1\)) Tj
+0 -24 Td
+/F1 13 Tf
+(RESEARCH & PUBLICATIONS) Tj
+0 -18 Td
+/F2 10 Tf
+(ACIFFS-2026: Quantum-Based Kill Switch Framework for Safe AI Control \(Oral Presentation\)) Tj
+0 -24 Td
+/F1 13 Tf
+(FEATURED PROJECTS) Tj
+0 -18 Td
+/F2 10 Tf
+(AI Resume Analysis: Full-stack AI resume feedback platform with AWS S3 & MongoDB.) Tj
+0 -14 Td
+/F2 10 Tf
+(ExpenseTracker: Modern personal finance dashboard with JWT auth, analytics, & CSV export.) Tj
+0 -14 Td
+/F2 10 Tf
+(Symponify: Music streaming web platform with Cloudinary media storage & JWT auth.) Tj
+0 -14 Td
+/F2 10 Tf
+(ReadNest: Library management & reading progress tracker with AWS S3.) Tj
+ET
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
+0000000326 00000 n 
+0000000396 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+1984
+%%EOF
