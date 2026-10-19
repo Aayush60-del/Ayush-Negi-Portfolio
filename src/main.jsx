@@ -111,7 +111,7 @@ const SKILL_CATEGORIES = [
     category: 'Backend',
     icon: Server,
     tag: 'Scalable Architecture',
-    skills: ['Node.js', 'Express.js', 'REST APIs'],
+    skills: ['Node.js', 'Express.js', 'REST APIs', 'Postman Testing'],
   },
   {
     category: 'Databases',
@@ -123,7 +123,7 @@ const SKILL_CATEGORIES = [
     category: 'Cloud & Tools',
     icon: Cloud,
     tag: 'DevOps & Deployment',
-    skills: ['AWS S3', 'Docker', 'Kubernetes', 'Linux', 'Git/GitHub'],
+    skills: ['AWS S3', 'Docker', 'Kubernetes', 'Linux', 'Git/GitHub', 'Postman'],
   },
 ];
 
@@ -133,12 +133,17 @@ const EXPERIENCES = [
     company: 'Algoson Software Pvt. Ltd.',
     period: 'Present',
     type: 'Current Role',
+    document: '/24BCS11877_Ayush_Negi.pdf',
+    documentType: 'pdf',
+    documentTitle: 'Ayush Negi - Algoson Software Internship Offer',
+    documentLabel: 'View Internship Offer',
     bullets: [
       'Web development and backend integration for dynamic, production web features.',
+      'API testing, endpoint validation, and automated request workflows using Postman to ensure seamless client-server communication.',
       'Data cleaning and analysis using Python-based approaches to extract insights and power data pipelines.',
       'Collaborating with cross-functional dev teams to build, debug, and integrate reliable software features.',
     ],
-    tech: ['MERN Stack', 'Python', 'Backend Integration', 'Data Cleaning & Analysis', 'REST APIs'],
+    tech: ['MERN Stack', 'Python', 'Backend Integration', 'REST APIs', 'Postman Testing', 'Data Analysis'],
   },
 ];
 
@@ -147,7 +152,7 @@ const PROJECTS = [
     id: 1,
     title: 'AI Resume Analysis',
     badge: 'MERN Stack & AWS S3',
-    tech: ['MERN Stack', 'AWS S3', 'Node.js', 'Express', 'MongoDB', 'AI Parsing'],
+    tech: ['MERN Stack', 'AWS S3', 'Node.js', 'Express', 'MongoDB', 'AI Parsing', 'Postman Testing'],
     description:
       'Full-stack AI resume analysis platform with secure S3 upload, authentication, resume parsing, and AI feedback generation; dashboard showing score, strengths, weaknesses, and suggestions.',
     live: 'https://ai-resume-analysis-wheat.vercel.app/',
@@ -171,7 +176,7 @@ const PROJECTS = [
     id: 3,
     title: 'ReadNest – Library Management & Reading Tracker',
     badge: 'MERN Stack & AWS S3',
-    tech: ['MERN Stack', 'AWS S3', 'React', 'Node.js', 'MongoDB', 'Custom APIs'],
+    tech: ['MERN Stack', 'AWS S3', 'React', 'Node.js', 'MongoDB', 'Custom APIs', 'Postman Testing'],
     description:
       'Book browsing and reading progress tracking with per-user saved position, AWS S3 file storage, custom backend APIs.',
     live: 'https://read-nest-tau.vercel.app/',
@@ -704,7 +709,7 @@ function App() {
                     <div>
                       <h4>Full Stack Development</h4>
                       <p>
-                        Shipping end-to-end web applications with MongoDB, Express, React, and Node.js, complete with secure authentication, cloud storage, and responsive UI.
+                        Shipping end-to-end web applications with MongoDB, Express, React, and Node.js, complete with secure authentication, Postman API testing, cloud storage, and responsive UI.
                       </p>
                     </div>
                   </div>
@@ -945,21 +950,36 @@ function App() {
 
                     {exp.document && (
                       <div className="doc-preview-container">
-                        <div
-                          className="doc-attachment-card experience-doc-card"
-                          onClick={() => setPreviewDoc({ src: exp.document, title: exp.documentTitle })}
-                          role="button"
-                          tabIndex={0}
-                        >
-                          <img src={exp.document} alt={exp.documentTitle} className="doc-attachment-thumb" />
-                          <div className="doc-attachment-overlay">
-                            <ExternalLink size={16} />
-                            <span>{exp.documentLabel}</span>
+                        {exp.documentType === 'pdf' ? (
+                          <a
+                            className="doc-attachment-card experience-doc-card document-pdf-preview"
+                            href={exp.document}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label={`${exp.documentLabel}: ${exp.documentTitle}`}
+                          >
+                            <FileText size={30} />
+                            <span>PDF DOCUMENT</span>
+                            <strong>{exp.documentLabel}</strong>
+                            <ExternalLink size={15} />
+                          </a>
+                        ) : (
+                          <div
+                            className="doc-attachment-card experience-doc-card"
+                            onClick={() => setPreviewDoc({ src: exp.document, title: exp.documentTitle })}
+                            role="button"
+                            tabIndex={0}
+                          >
+                            <img src={exp.document} alt={exp.documentTitle} className="doc-attachment-thumb" />
+                            <div className="doc-attachment-overlay">
+                              <ExternalLink size={16} />
+                              <span>{exp.documentLabel}</span>
+                            </div>
                           </div>
-                        </div>
+                        )}
                         <div className="doc-attachment-meta">
                           <FileText size={14} className="doc-meta-icon" />
-                          <span>Official Offer Letter • Algoson Software Pvt. Ltd.</span>
+                          <span>Official Internship Offer • Algoson Software Pvt. Ltd.</span>
                         </div>
                       </div>
                     )}

@@ -15,7 +15,7 @@ endobj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 6 0 obj
-<< /Length 1536 >>
+<< /Length 1608 >>
 stream
 BT
 50 740 Td
@@ -35,7 +35,7 @@ BT
 (Software Developer - Algoson Software Pvt. Ltd. \(Present\)) Tj
 0 -14 Td
 /F2 10 Tf
-(Backend integration, dynamic web features, and Python data pipelines.) Tj
+(Backend integration, dynamic web features, Postman API testing, and Python data pipelines.) Tj
 0 -24 Td
 /F1 13 Tf
 (TECHNICAL SKILLS) Tj
@@ -44,7 +44,7 @@ BT
 (Languages & Frameworks: React, Next.js, Node.js, Express, Redux Toolkit, Python, Java, C++) Tj
 0 -14 Td
 /F2 10 Tf
-(Databases & Cloud: MongoDB, SQL, AWS S3, Docker, Kubernetes, Git/GitHub) Tj
+(Databases, Cloud & Tools: MongoDB, SQL, AWS S3, Docker, Kubernetes, Git/GitHub, Postman API Testing) Tj
 0 -24 Td
 /F1 13 Tf
 (EDUCATION) Tj
@@ -62,7 +62,7 @@ BT
 (FEATURED PROJECTS) Tj
 0 -18 Td
 /F2 10 Tf
-(AI Resume Analysis: Full-stack AI resume feedback platform with AWS S3 & MongoDB.) Tj
+(AI Resume Analysis: Full-stack AI resume feedback platform with AWS S3, Postman & MongoDB.) Tj
 0 -14 Td
 /F2 10 Tf
 (ExpenseTracker: Modern personal finance dashboard with JWT auth, analytics, & CSV export.) Tj
@@ -71,7 +71,7 @@ BT
 (Symponify: Music streaming web platform with Cloudinary media storage & JWT auth.) Tj
 0 -14 Td
 /F2 10 Tf
-(ReadNest: Library management & reading progress tracker with AWS S3.) Tj
+(ReadNest: Library management & reading progress tracker with AWS S3 & custom APIs.) Tj
 ET
 endstream
 endobj
@@ -87,5 +87,5 @@ xref
 trailer
 << /Size 7 /Root 1 0 R >>
 startxref
-1984
+2056
 %%EOF

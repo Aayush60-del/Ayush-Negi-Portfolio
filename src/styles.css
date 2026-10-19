@@ -1949,6 +1949,29 @@ a {
   object-position: top;
 }
 
+.document-pdf-preview {
+  min-height: 120px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: var(--blue-light);
+  text-align: center;
+}
+
+.document-pdf-preview > span {
+  color: var(--text-dim);
+  font: 600 10px 'DM Mono', monospace;
+  letter-spacing: 0.08em;
+}
+
+.document-pdf-preview > strong {
+  color: var(--text);
+  font-size: 0.82rem;
+}
+
 .research-media-card {
   border-color: rgba(59, 130, 246, 0.3);
 }
