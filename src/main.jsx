@@ -24,6 +24,7 @@ const projectOneImage = '/resumai-preview.jpg';
 const projectTwoImage = '/symponify-preview.jpg';
 const projectThreeImage = '/readnest-preview.jpg';
 const projectFourImage = '/expensetracker-preview.png';
+const codeSyncImage = '/codesync-preview.png';
 
 // Authentic SVG Icons for Developer & Competitive Programming Platforms
 function GithubIcon({ size = 20, className = "" }) {
@@ -135,8 +136,9 @@ const EXPERIENCES = [
     type: 'Current Role',
     document: '/24BCS11877_Ayush_Negi.pdf',
     documentType: 'pdf',
+    documentCover: '/algoson-internship-certificate-cover.png',
     documentTitle: 'Ayush Negi - Algoson Software Internship Offer',
-    documentLabel: 'View Internship Offer',
+    documentLabel: 'View Internship Certificate',
     bullets: [
       'Web development and backend integration for dynamic, production web features.',
       'API testing, endpoint validation, and automated request workflows using Postman to ensure seamless client-server communication.',
@@ -148,6 +150,18 @@ const EXPERIENCES = [
 ];
 
 const PROJECTS = [
+  {
+    id: 5,
+    title: 'CodeSync – Real-Time Collaborative Code Editor',
+    badge: 'React, Spring Boot & Yjs',
+    tech: ['React', 'CodeMirror 6', 'Yjs (CRDT)', 'Spring Boot', 'WebSockets', 'PostgreSQL', 'JWT'],
+    description:
+      'A real-time collaborative code editor where teams edit shared documents together with conflict-free Yjs synchronization. Create or join rooms with six-character invite codes, collaborate as a guest, or optionally sign in with JWT authentication.',
+    live: 'https://code-sync-dusky-psi.vercel.app/',
+    code: 'https://github.com/Aayush60-del/CodeSync',
+    image: codeSyncImage,
+    highlight: 'Real-Time Collaboration',
+  },
   {
     id: 1,
     title: 'AI Resume Analysis',
@@ -950,7 +964,25 @@ function App() {
 
                     {exp.document && (
                       <div className="doc-preview-container">
-                        {exp.documentType === 'pdf' ? (
+                        {exp.documentCover ? (
+                          <a
+                            className="doc-attachment-card experience-doc-card experience-certificate-preview"
+                            href={exp.document}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label={`${exp.documentLabel}: ${exp.documentTitle}`}
+                          >
+                            <img
+                              src={exp.documentCover}
+                              alt="Ayush Negi's Algoson Software internship completion certificate"
+                              className="doc-attachment-thumb"
+                            />
+                            <div className="doc-attachment-overlay">
+                              <ExternalLink size={16} />
+                              <span>{exp.documentLabel}</span>
+                            </div>
+                          </a>
+                        ) : exp.documentType === 'pdf' ? (
                           <a
                             className="doc-attachment-card experience-doc-card document-pdf-preview"
                             href={exp.document}
